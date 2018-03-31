@@ -91,6 +91,11 @@ select[multiple] + .chosen-container li.result-selected {
 	border-color: #e8641b;
 }
 
+div.gform_confirmation_message {
+	background: #00ff00;
+	color: #ffffff;
+}
+
 .gf_page_steps > div {
 	color: #ffffff;
 	background: #000000;
@@ -1068,8 +1073,6 @@ span.ginput_quantity_label {
 }
 
 div.gform_confirmation_message {
-	background: #00ff00;
-	color: #ffffff;
 	padding: 1em;
 	margin: 1em 0;
 	border-radius: 3px;
