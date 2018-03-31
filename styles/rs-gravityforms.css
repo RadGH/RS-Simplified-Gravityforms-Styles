@@ -331,13 +331,6 @@ li.gfield:after {
 	padding-top: 0;
 }
 
-@media (max-width: 767px) {
-	li.gfield {
-		max-width: 100%;
-		overflow-x: scroll;
-	}
-}
-
 /* Typography */
 
 .gfield_total label {
