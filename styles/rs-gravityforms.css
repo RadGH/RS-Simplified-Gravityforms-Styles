@@ -365,6 +365,18 @@ h3.gf_progressbar_title {
 	line-height: 1;
 }
 
+/* Label, hidden */
+.gfield.hidden_label label.gfield_label {
+	position: absolute;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	z-index: -1;
+	overflow: hidden;
+	display: block;
+	text-indent: -1000px;
+}
+
 /* Radio & Checkboxes */
 
 .gfield_checkbox li label, .gfield_radio li label {
