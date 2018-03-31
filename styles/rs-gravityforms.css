@@ -397,22 +397,6 @@ h3.gf_progressbar_title {
 	top: 1.3em;
 }
 
-.ginput_container_select:after {
-	content: "";
-	width: 0;
-	height: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.ginput_container_select:after {
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	top: .3em;
-	right: .75em;
-	opacity: 0.5;
-}
-
 .ginput_container_select select {
 	text-overflow: ellipsis;
 	white-space: nowrap;
