@@ -1,3 +1,127 @@
+/*
+Colors that you should override
+*/
+.gfield_required, .warningTextareaInfo,
+ul.chosen-results li.no-results,
+.ginput_container_fileupload span.screen-reader-text + div {
+	color: #ff0000;
+}
+
+.ginput_product_price_label,
+.ginput_product_price,
+.ginput_container_total {
+	color: #00ff00;
+}
+
+select[multiple] + .chosen-container li.result-selected,
+td.ui-datepicker-current-day a.ui-state-active,
+ul.chosen-results li.active-result.result-selected {
+	background: #000000;
+	color: #ffffff;
+}
+
+.ginput_container_select:after {
+	border-top: 8px solid #000000;
+}
+
+li.gfield a.chosen-single span,
+li.gfield .chosen-container-multi .search-choice span {
+	color: #000000;
+}
+
+ul.chosen-results li.active-result.result-selected.gf_placeholder {
+	color: #000000;
+}
+
+select[multiple] + .chosen-container li.result-selected {
+	background: #000000;
+	color: #ffffff;
+}
+
+.validation_error, .gform_validation_error li.gfield_error {
+	background: #ff0000;
+	color: #ffffff;
+}
+
+.gfield_description.validation_message {
+	background: #000000;
+}
+
+.gfield_description.validation_message:before {
+	border-top: 5px solid #000000;
+}
+
+#ui-datepicker-div {
+	background: #ffffff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.gf_progressbar {
+	border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+.gfield_error .ginput_container_fileupload {
+	color: #000000;
+}
+
+.gf_progressbar_percentage {
+	color: #ffffff;
+	border-top: 5px solid #0000ff;
+}
+.gf_progressbar_percentage span {
+	background: #000000;
+}
+.gf_progressbar_percentage span:after {
+	border-bottom: 5px solid #000000;
+}
+
+.gf_progressbar_percentage.percentbar_red {
+	border-color: #ff0000;
+}
+
+.gf_progressbar_percentage.percentbar_#00ff00 {
+	border-color: #00ff00;
+}
+
+.gf_progressbar_percentage.percentbar_gray {
+	border-color: #666666;
+}
+
+.gf_progressbar_percentage.percentbar_orange {
+	border-color: #e8641b;
+}
+
+.gf_page_steps > div {
+	color: #ffffff;
+	background: #000000;
+}
+
+.gf_page_steps > div.gf_step_pending {
+	background: rgba(0,0,0,0.1);
+	color: #666;
+}
+
+span.gf_step_number {
+	background: #ffffff;
+	color: #000000;
+}
+
+.gform_card_icon_container div {
+	color: #666;
+}
+
+span.ginput_card_security_code_icon {
+	color: #666;
+}
+
+.gfield_creditcard_warning_message {
+	background: #ff0000;
+	color: #ffffff;
+}
+
+.gfield_error .ginput_container_creditcard label {
+	color: #000000;
+}
+
 /* Icons */
 @font-face {
 	font-family: 'icomoon';
@@ -238,22 +362,6 @@ h3.gf_progressbar_title {
 	line-height: 1;
 }
 
-/* Colors */
-
-.gfield_required, .warningTextareaInfo, ul.chosen-results li.no-results, .ginput_container_fileupload span.screen-reader-text + div {
-	color: #bf0421;
-}
-
-/* Maroon */
-.ginput_product_price_label, .ginput_product_price, .ginput_container_total {
-	color: green;
-}
-
-select[multiple] + .chosen-container li.result-selected, td.ui-datepicker-current-day a.ui-state-active, ul.chosen-results li.active-result.result-selected {
-	background: black;
-	color: white;
-}
-
 /* Radio & Checkboxes */
 
 .gfield_checkbox li label, .gfield_radio li label {
@@ -299,7 +407,6 @@ select[multiple] + .chosen-container li.result-selected, td.ui-datepicker-curren
 	border-right: 5px solid transparent;
 	top: .3em;
 	right: .75em;
-	border-top: 8px solid black;
 	opacity: 0.5;
 }
 
@@ -312,9 +419,7 @@ select[multiple] + .chosen-container li.result-selected, td.ui-datepicker-curren
 .chosen-container {
 	position: relative;
 }
-
 li.gfield a.chosen-single span, li.gfield .chosen-container-multi .search-choice span {
-	color: black;
 	position: absolute;
 	display: block;
 	left: 1em;
@@ -323,8 +428,8 @@ li.gfield a.chosen-single span, li.gfield .chosen-container-multi .search-choice
 
 ul.chosen-results {
 	display: none;
-	border: 3px solid #efefef;
-	background: white;
+	border: 3px solid rgba(0,0,0,0.1);
+	background: #ffffff;
 	top: -.3em;
 	position: relative;
 	padding: 0;
@@ -344,7 +449,7 @@ ul.chosen-results li.active-result {
 }
 
 ul.chosen-results li.active-result:hover {
-	background: #efefef;
+	background: rgba(0,0,0,0.1);
 }
 
 select[multiple] + .chosen-container li.result-selected {
@@ -357,7 +462,6 @@ select[multiple] + .chosen-container.chosen-container-active li.search-field {
 
 ul.chosen-results li.active-result.result-selected.gf_placeholder {
 	background: transparent;
-	color: black;
 }
 
 ul.chosen-results li.no-results {
@@ -656,9 +760,7 @@ a.ui-datepicker-next {
 }
 
 #ui-datepicker-div {
-	background: white;
 	padding: .5em;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 table.ui-datepicker-calendar th, table.ui-datepicker-calendar td {
@@ -679,7 +781,7 @@ a.ui-datepicker-next.ui-corner-all {
 }
 
 td.ui-datepicker-week-end {
-	background: #efefef;
+	background: rgba(0,0,0,0.1);
 }
 
 table.ui-datepicker-calendar td {
@@ -689,8 +791,6 @@ table.ui-datepicker-calendar td {
 
 select[multiple] + .chosen-container li.result-selected {
 	padding-left: .75em;
-	background: black;
-	color: white;
 }
 
 td.ui-datepicker-current-day a.ui-state-active {
@@ -773,7 +873,7 @@ span.address_zip {
 /* File Upload */
 
 .ginput_container_fileupload {
-	background: #efefef;
+	background: rgba(0,0,0,0.1);
 	padding: .75em;
 	border-radius: 3px;
 }
@@ -852,10 +952,7 @@ span.ginput_quantity_label {
 }
 
 /* Error & Validation Messages */
-
 .validation_error, .gform_validation_error li.gfield_error {
-	background: #bf0421; /* Maroon */
-	color: white;
 	padding: 0 1em 1em 1em;
 	margin: 1em 0;
 	border-radius: 3px;
@@ -869,7 +966,6 @@ span.ginput_quantity_label {
 	position: absolute;
 	top: -1.25em;
 	left: 1em;
-	background: black;
 	border-radius: 3px;
 	padding: .25em .5em;
 }
@@ -883,7 +979,6 @@ span.ginput_quantity_label {
 	border-right: 5px solid transparent;
 	bottom: -5px;
 	left: 1em;
-	border-top: 5px solid black;
 }
 
 .gform_wrapper li.gfield_error {
@@ -896,15 +991,11 @@ span.ginput_quantity_label {
 }
 
 .gfield_error .warningTextareaInfo {
-	color: white;
-}
-
-.gfield_error .ginput_container_fileupload {
-	color: black;
+	color: #ffffff;
 }
 
 .gfield_error img.add_list_item {
-	background-color: white;
+	background-color: #ffffff;
 	border-radius: 50%;
 }
 
@@ -919,19 +1010,15 @@ span.ginput_quantity_label {
 
 .gf_progressbar {
 	position: relative;
-	border-top: 5px solid #efefef;
 }
 
 .gf_progressbar_percentage {
-	color: white;
-	border-top: 5px solid #4480c3;
 	position: relative;
 	top: -5px;
 	text-align: right;
 }
 
 .gf_progressbar_percentage span {
-	background: black;
 	display: inline-block;
 	width: 2.5em;
 	height: 2.5em;
@@ -958,7 +1045,6 @@ span.ginput_quantity_label {
 	border-right: 0 solid transparent;
 	top: -5px;
 	right: 0;
-	border-bottom: 5px solid black;
 }
 
 .gf_progressbar_percentage.percentbar_0 span:after {
@@ -966,22 +1052,6 @@ span.ginput_quantity_label {
 	left: 0;
 	border-right: 5px solid transparent;
 	border-left: 0;
-}
-
-.gf_progressbar_percentage.percentbar_red {
-	border-color: #bf0421;
-}
-
-.gf_progressbar_percentage.percentbar_green {
-	border-color: green;
-}
-
-.gf_progressbar_percentage.percentbar_gray {
-	border-color: #666;
-}
-
-.gf_progressbar_percentage.percentbar_orange {
-	border-color: #e8641b;
 }
 
 .gf_progressbar_percentage.percentbar_custom {
@@ -997,8 +1067,8 @@ span.ginput_quantity_label {
 }
 
 div.gform_confirmation_message {
-	background: green;
-	color: white;
+	background: #00ff00;
+	color: #ffffff;
 	padding: 1em;
 	margin: 1em 0;
 	border-radius: 3px;
@@ -1017,15 +1087,8 @@ body img.gform_ajax_spinner {
 .gf_page_steps > div {
 	padding: .25em;
 	display: table-cell;
-	color: white;
-	background: black;
 	vertical-align: top;
 	font-weight: bold;
-}
-
-.gf_page_steps > div.gf_step_pending {
-	background: #efefef;
-	color: #666;
 }
 
 .gf_step_clear {
@@ -1033,8 +1096,6 @@ body img.gform_ajax_spinner {
 }
 
 span.gf_step_number {
-	background: white;
-	color: black;
 	display: inline-block;
 	width: 2em;
 	text-align: center;
@@ -1065,13 +1126,13 @@ span.gf_step_number {
 /* Credit Card */
 
 .ginput_container_creditcard {
-	background: #efefef;
+	background: rgba(0,0,0,0.1);
 	padding: 2em;
 	border-radius: 5px;
 }
 
 .ginput_container_creditcard input, .ginput_container_creditcard select {
-	background: white;
+	background: #ffffff;
 }
 
 .gform_card_icon_container div {
@@ -1096,7 +1157,6 @@ span.gf_step_number {
 	position: relative;
 	display: block;
 	width: 1.5em;
-	color: #666;
 }
 
 .ginput_card_security_code_icon:before {
@@ -1134,18 +1194,10 @@ span.gf_step_number {
 span.ginput_card_security_code_icon {
 	font-size: 1.5em;
 	float: left;
-	color: #666;
 }
-
 .gfield_creditcard_warning_message {
-	background: #bf0421;
-	color: white;
 	padding: 1em .75em;
 	border-radius: 3px;
-}
-
-.gfield_error .ginput_container_creditcard label {
-	color: black;
 }
 
 .ginput_container_creditcard .ginput_full {
