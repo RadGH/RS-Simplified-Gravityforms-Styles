@@ -78,7 +78,7 @@ select[multiple] + .chosen-container li.result-selected {
 	border-color: #ff0000;
 }
 
-.gf_progressbar_percentage.percentbar_#00ff00 {
+.gf_progressbar_percentage.percentbar_green {
 	border-color: #00ff00;
 }
 
