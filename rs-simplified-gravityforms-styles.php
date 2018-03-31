@@ -14,7 +14,7 @@ define( 'RS_SGFS_PATH', dirname(__FILE__) );
 function rs_sgfs_enqueue_scripts() {
 	wp_enqueue_style( 'rs_sgfs', RS_SGFS_URL . '/styles/rs-gravityforms.css' );
 }
-add_action( 'gform_pre_enqueue_scripts', 'rs_sgfs_enqueue_scripts', 100 );
+add_action( 'gform_pre_enqueue_scripts', 'rs_sgfs_enqueue_scripts', 8 );
 
 function rs_sgfs_activate_plugin() {
 	// Toggle gravity form CSS setting
