@@ -963,7 +963,7 @@ span.ginput_quantity_label {
 
 /* Error & Validation Messages */
 .validation_error {
-	padding-top: 1em;
+	margin-bottom: 40px;
 }
 
 .gfield_description.validation_message {
@@ -989,7 +989,6 @@ span.ginput_quantity_label {
 
 .gform_wrapper li.gfield_error {
 	position: relative;
-	margin-top: 3em;
 }
 
 .gfield_error .ginput_container_select:after {
