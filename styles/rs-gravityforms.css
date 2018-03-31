@@ -38,13 +38,14 @@ select[multiple] + .chosen-container li.result-selected {
 	color: #ffffff;
 }
 
-.validation_error, .gform_validation_error li.gfield_error {
-	background: #ff0000;
-	color: #ffffff;
+.validation_error input,
+.gform_validation_error li.gfield_error input {
+	border-color: #ff0000;
 }
 
 .gfield_description.validation_message {
 	background: #000000;
+	color: #ffffff;
 }
 
 .gfield_description.validation_message:before {
@@ -265,6 +266,7 @@ button.icon-search.icon-replacement:before {
 	list-style: none;
 }
 
+.gform_fields:after,
 li.gfield:after {
 	content: "";
 	display: table;
@@ -955,12 +957,6 @@ span.ginput_quantity_label {
 }
 
 /* Error & Validation Messages */
-.validation_error, .gform_validation_error li.gfield_error {
-	padding: 0 1em 1em 1em;
-	margin: 1em 0;
-	border-radius: 3px;
-}
-
 .validation_error {
 	padding-top: 1em;
 }
@@ -972,6 +968,7 @@ span.ginput_quantity_label {
 	left: 1em;
 	border-radius: 3px;
 	padding: .25em .5em;
+	white-space: nowrap;
 }
 
 .gfield_description.validation_message:before {
