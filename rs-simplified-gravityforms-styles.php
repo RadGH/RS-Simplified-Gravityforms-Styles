@@ -20,11 +20,11 @@ add_action( 'wp_enqueue_scripts', 'rs_sgfs_enqueue_scripts', 8 );
 // Add a default tabindex value if none is given in the shortcode to prevent tabbing to the wrong element
 // Start at 20, and add 20 for each form thereafter.
 function rs_sgfs_add_tabindex( $out, $pairs, $atts, $shortcode ) {
+	static $increment = 0;
+	$increment += 20;
+	
 	// Only apply when a value isn't given by the shortcode.
 	if ( !isset($atts['tabindex']) ) {
-		static $increment = 0;
-		$increment += 20;
-		
 		$out['tabindex'] = $increment;
 	}
 	
