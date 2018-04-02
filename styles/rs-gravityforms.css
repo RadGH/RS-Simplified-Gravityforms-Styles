@@ -980,6 +980,10 @@ span.ginput_quantity_label {
 	position: relative;
 }
 
+.gform_wrapper.gform_validation_error li.gfield {
+	margin-bottom: 36px;
+}
+
 .gfield_error .ginput_container_select:after {
 	display: none;
 }
